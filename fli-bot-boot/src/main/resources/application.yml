@@ -1,0 +1,29 @@
+server:
+  port: 8070
+spring.main.allow-bean-definition-overriding: true
+
+app:
+  swagger.package: org.rx.bot
+  sessionId:
+    appName: rx
+    version: 0.1
+  bot:
+#    debugPath: /app_bot/debug/
+    wx-service:
+      remotingPort: 8071
+      timeout: 60000
+    wx-mobile:
+      remotingPort: 8072
+      timeout: 120000
+      capturePeriod: 850
+      maxCheckMessageCount: 2
+      maxCaptureMessageCount: 1
+      maxScrollMessageCount: 1
+      autoResetWindow: true
+      adminId: RockyLOMO
+      serviceIds:
+        - kaolazhuanke
+        - duoduojinbao
+      groupIds:
+        - 粉丝福利群
+        - 苏州美家新天地家园群
